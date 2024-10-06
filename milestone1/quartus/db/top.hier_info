@@ -1,0 +1,21 @@
+|vending
+clk => current_state~1.DATAIN
+rst_n => current_state~3.DATAIN
+nickel => next_state.OUTPUTSELECT
+nickel => next_state.OUTPUTSELECT
+nickel => next_state.OUTPUTSELECT
+nickel => Selector1.IN3
+nickel => Selector2.IN4
+nickel => Selector3.IN4
+nickel => Selector4.IN3
+dime => next_state.OUTPUTSELECT
+dime => next_state.OUTPUTSELECT
+dime => next_state.DATAA
+quarter => next_state.DATAA
+quarter => next_state.DATAA
+soda <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+change[0] <= change.DB_MAX_OUTPUT_PORT_TYPE
+change[1] <= change.DB_MAX_OUTPUT_PORT_TYPE
+change[2] <= change[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
